@@ -6,14 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description"
-        content="دقة الإنجاز الذكي (DIDCO) - شركة رائدة في الكهروميكانيك والإنشاءات الذكية بالمدينة المنورة. متخصصون في التكييف، الأنظمة الكهربائية، السمارت هوم، والديكورات الهندسية. خبرة 12+ عاماً.">
+        content="دقة الإنجاز الذكي (DIDCO) - شركة رائدة في الكهروميكانيك والإنشاءات الذكية بالمدينة المنورة. متخصصون في التكييف، الأنظمة الكهربائية، السمارت هوم، والديكورات الهندسية. خبرة 5+ عاماً.">
     <meta name="keywords" content="دقة الإنجاز الذكي, DIDCO, كهروميكانيك, سمارت هوم, تكييف, ديكور, مقاولات, المدينة المنورة, أنظمة ذكية">
     <meta name="author" content="دقة الإنجاز الذكي (DIDCO) للكهروميكانيك والإنشاءات الذكية">
     <meta name="robots" content="index, follow">
     <title>دقة الإنجاز الذكي (DIDCO) | خبير الكهروميكانيك والأنظمة الذكية</title>
     <meta property="og:title" content="دقة الإنجاز الذكي (DIDCO) | كهروميكانيك و سمارت هوم - جودة وإتقان">
     <meta property="og:description"
-        content="شركة دقة الإنجاز الذكي (DIDCO) المتخصصة في الكهروميكانيك المتكامل، أنظمة التكييف، السمارت هوم، والديكور الهندسي. خبرة 12 عاماً ومشاريع تفوق 150 مشروعاً.">
+        content="شركة دقة الإنجاز الذكي (DIDCO) المتخصصة في الكهروميكانيك المتكامل، أنظمة التكييف، السمارت هوم، والديكور الهندسي. خبرة 5 عاماً ومشاريع تفوق 150 مشروعاً.">
     <meta property="og:image" content="./images/logo.jpg">
     <meta property="og:url" content="https://www.didco.com">
     <meta name="twitter:card" content="summary_large_image">
@@ -236,6 +236,26 @@
             height: calc(100% - 1rem);
             background: #e2e8f0;
         }
+
+        /* navbar wide - all links in one line */
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            white-space: nowrap;
+            scrollbar-width: thin;
+        }
+        .nav-container::-webkit-scrollbar {
+            height: 2px;
+        }
+        @media (min-width: 1280px) {
+            .nav-container {
+                gap: 1.75rem;
+            }
+        }
     </style>
 </head>
 
@@ -259,43 +279,46 @@
         </div>
     </div>
 
-    <!-- HEADER / NAVBAR -->
+    <!-- HEADER / NAVBAR مع توسيع العرض وجميع الروابط جنب بعض -->
     <header class="fixed top-[37px] left-0 w-full glass-nav z-50 transition-all duration-300 border-b border-gray-100"
         id="mainNav">
-        <div class="max-w-[1600px] mx-auto px-4 md:px-8 py-3 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <img src="./images/logo.jpg" alt="دقة الإنجاز الذكي (DIDCO)" class="h-16 w-auto object-contain rounded-md shadow-sm"
+        <div class="container mx-auto px-5 md:px-10 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3 shrink-0">
+                <img src="./images/logo.jpg" alt="دقة الإنجاز الذكي (DIDCO)" class="h-14 w-auto object-contain rounded-md shadow-sm"
                     onerror="this.src='https://placehold.co/200x80?text=DIDCO'">
             </div>
-            <nav class="hidden md:flex flex-1 justify-center items-center flex-nowrap gap-4 lg:gap-6 xl:gap-8 text-gray-700 font-semibold text-sm lg:text-base px-4">
-                <a href="#home" class="nav-link">الرئيسية</a>
-                <a href="#about" class="nav-link">عن الشركة</a>
-                <a href="#whyus" class="nav-link">لماذا نحن؟</a>
-                <a href="#stats" class="nav-link">إنجازاتنا</a>
-                <a href="#services" class="nav-link">خدماتنا</a>
-                <a href="#electromechanical" class="nav-link">الكهروميكانيك</a>
-                <a href="#branch-plan" class="nav-link">خطة الفرع</a>
-                <a href="#team" class="nav-link">فريق العمل</a>
-                <a href="#contact" class="nav-link">اتصل بنا</a>
+            <!-- nav links expanded horizontally without line breaks -->
+            <nav class="hidden md:flex nav-container flex-1 justify-center mx-4">
+                <a href="#home" class="nav-link text-sm lg:text-base">الرئيسية</a>
+                <a href="#about" class="nav-link text-sm lg:text-base">عن الشركة</a>
+                <a href="#whyus" class="nav-link text-sm lg:text-base">لماذا نحن؟</a>
+                <a href="#stats" class="nav-link text-sm lg:text-base">إنجازاتنا</a>
+                <a href="#services" class="nav-link text-sm lg:text-base">خدماتنا</a>
+                <a href="#electromechanical" class="nav-link text-sm lg:text-base">الكهروميكانيك</a>
+                <a href="#branch-plan" class="nav-link text-sm lg:text-base">خطة الفرع</a>
+                <a href="#team" class="nav-link text-sm lg:text-base">فريق العمل</a>
+                <a href="#certificates" class="nav-link text-sm lg:text-base">الشهادات</a>
+                <a href="#contact" class="nav-link text-sm lg:text-base">اتصل بنا</a>
             </nav>
-            <div class="flex items-center justify-end gap-3">
+            <!-- <div class="flex items-center justify-end gap-3 shrink-0">
                 <a href="#contact"
-                    class="hidden md:inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-5 py-2.5 rounded-full font-bold text-sm shadow-lg transition-all duration-300"><i
+                    class="hidden md:inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg transition-all duration-300"><i
                         class="fas fa-envelope text-xs"></i>طلب عرض سعر</a>
                 <button id="menuBtn" class="md:hidden text-2xl text-slate-700 hover:text-orange-600 transition"><i
                         class="fas fa-bars"></i></button>
-            </div>
+            </div> -->
         </div>
         <div id="mobileMenu" class="md:hidden hidden bg-white/95 backdrop-blur-md border-t border-gray-200 px-5 py-4 flex flex-col gap-3 shadow-lg">
-            <a href="#home" class="mobile-link">الرئيسية</a>
-            <a href="#about" class="mobile-link">عن الشركة</a>
-            <a href="#whyus" class="mobile-link">لماذا نحن؟</a>
-            <a href="#stats" class="mobile-link">إنجازاتنا</a>
-            <a href="#services" class="mobile-link">خدماتنا</a>
-            <a href="#electromechanical" class="mobile-link">الكهروميكانيك</a>
-            <a href="#branch-plan" class="mobile-link">خطة الفرع</a>
-            <a href="#team" class="mobile-link">فريق العمل</a>
-            <a href="#contact" class="mobile-link">اتصل بنا</a>
+            <a href="#home" class="mobile-link font-semibold">الرئيسية</a>
+            <a href="#about" class="mobile-link font-semibold">عن الشركة</a>
+            <a href="#whyus" class="mobile-link font-semibold">لماذا نحن؟</a>
+            <a href="#stats" class="mobile-link font-semibold">إنجازاتنا</a>
+            <a href="#services" class="mobile-link font-semibold">خدماتنا</a>
+            <a href="#electromechanical" class="mobile-link font-semibold">الكهروميكانيك</a>
+            <a href="#branch-plan" class="mobile-link font-semibold">خطة الفرع</a>
+            <a href="#team" class="mobile-link font-semibold">فريق العمل</a>
+            <a href="#certificates" class="mobile-link font-semibold">الشهادات</a>
+            <a href="#contact" class="mobile-link font-semibold">اتصل بنا</a>
             <a href="#contact" class="mt-2 flex items-center justify-center gap-2 bg-orange-600 text-white px-5 py-2.5 rounded-full font-bold text-sm">طلب عرض سعر</a>
         </div>
     </header>
@@ -311,7 +334,7 @@
                 style="background-image: url('./images/hero-3.jpg'); opacity:0;"></div>
             <div class="absolute inset-0 hero-overlay"></div>
             <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-20">
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white drop-shadow-lg">دقة الإنجاز الذكي (DIDCO) <span
+                <h1 class="text-4xl md:text-3xl lg:text-5xl font-extrabold text-white drop-shadow-lg">دقة الإنجاز الذكي (DIDCO) <span
                         class="text-orange-400">للكهروميكانيك</span> والأنظمة الذكية</h1>
                 <p class="text-xl md:text-2xl text-gray-100 mt-4 max-w-3xl">حلول متكاملة: تكييف، كهرباء، سمارت هوم، ديكور هندسي – من التصميم إلى التشغيل</p>
                 <div class="flex gap-4 mt-8"><a href="#services"
@@ -329,7 +352,7 @@
         </div>
     </section>
 
-    <!-- ABOUT SECTION (محدث) -->
+    <!-- ABOUT SECTION (مع إعادة الختم) -->
     <section id="about" class="py-20 px-5 md:px-10 bg-white fade-up">
         <div class="container mx-auto text-center mb-8"><span class="text-orange-600 font-bold uppercase tracking-wider">خبراء الكهروميكانيك</span>
             <h2 class="text-3xl md:text-4xl font-bold mt-2 text-slate-800">دقة الإنجاز الذكي (DIDCO) : العمود الفقري للأنظمة الكهربائية والميكانيكية</h2>
@@ -356,7 +379,7 @@
         </div>
     </section>
 
-    <!-- الكهروميكانيك المتخصص (قسم جديد) -->
+    <!-- الكهروميكانيك المتخصص -->
     <section id="electromechanical" class="py-20 px-5 bg-orange-50 fade-up">
         <div class="container mx-auto text-center mb-12">
             <span class="text-orange-600 font-bold uppercase">خبرتنا الجوهرية</span>
@@ -373,7 +396,7 @@
         </div>
     </section>
 
-    <!-- ========== خطة تشغيل الفرع الكبير (جديد) ========== -->
+    <!-- ========== خطة تشغيل الفرع ========== -->
     <section id="branch-plan" class="py-20 px-5 md:px-10 bg-white fade-up">
         <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-12"><span class="text-orange-600 font-bold uppercase">الخطة التنفيذية</span>
@@ -382,7 +405,6 @@
                 <p class="text-gray-600 max-w-2xl mx-auto mt-4">نعلن البدء في تجهيزات الفرع الجديد اعتباراً من <strong class="text-orange-600">الأسبوع القادم</strong> وفق خطة زمنية محكمة وتوزيع دقيق للفرق.</p>
             </div>
             <div class="grid lg:grid-cols-2 gap-10">
-                <!-- الجدول الزمني -->
                 <div class="bg-slate-50 rounded-2xl p-6 shadow-lg">
                     <h3 class="text-2xl font-bold border-r-4 border-orange-500 pr-3 mb-5"><i class="fas fa-calendar-week ml-2 text-orange-600"></i> الجدول الزمني (12 أسبوعاً)</h3>
                     <div class="space-y-4">
@@ -393,7 +415,6 @@
                         <div class="timeline-step"><span class="font-bold text-orange-700">الأسبوع 11-12:</span> التشغيل التجريبي، ضبط الإعدادات، والتسليم النهائي.</div>
                     </div>
                 </div>
-                <!-- توزيع فرق العمل -->
                 <div class="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-6 shadow-lg">
                     <h3 class="text-2xl font-bold border-r-4 border-orange-500 pr-3 mb-5"><i class="fas fa-users ml-2 text-orange-600"></i> توزيع فرق العمل</h3>
                     <ul class="space-y-4 text-right">
@@ -411,13 +432,13 @@
         </div>
     </section>
 
-    <!-- STATS SECTION تظل كما هي -->
+    <!-- STATS SECTION -->
     <section id="stats" class="py-20 bg-orange-50 bg-pattern fade-up">
         <div class="container mx-auto px-5 text-center">
             <h2 class="text-3xl md:text-4xl font-bold text-slate-800">إنجازاتنا بالأرقام</h2>
             <div class="w-20 h-1 bg-orange-500 mx-auto my-4 rounded-full"></div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mt-10">
-                <div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-orange-100 rounded-full flex mx-auto items-center justify-center text-orange-600 text-3xl"><i class="fas fa-calendar-alt"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">12+</div><p class="text-xl text-orange-600 font-bold mt-1">عاماً من التميز</p></div>
+                <div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-orange-100 rounded-full flex mx-auto items-center justify-center text-orange-600 text-3xl"><i class="fas fa-calendar-alt"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">5+</div><p class="text-xl text-orange-600 font-bold mt-1">عاماً من التميز</p></div>
                 <div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-orange-100 rounded-full flex mx-auto items-center justify-center text-orange-600 text-3xl"><i class="fas fa-hard-hat"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">150+</div><p class="text-xl text-orange-600 font-bold mt-1">مشروع مكتمل</p></div>
                 <div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-orange-100 rounded-full flex mx-auto items-center justify-center text-orange-600 text-3xl"><i class="fas fa-user-tie"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">25+</div><p class="text-xl text-orange-600 font-bold mt-1">مهندس خبير</p></div>
                 <div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-orange-100 rounded-full flex mx-auto items-center justify-center text-orange-600 text-3xl"><i class="fas fa-smile"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">98%</div><p class="text-xl text-orange-600 font-bold mt-1">رضا العملاء</p></div>
@@ -425,7 +446,7 @@
         </div>
     </section>
 
-    <!-- باقي الأقسام (خدمات، فريق، شهادات، تواصل) مع الحفاظ على المحتوى الأصلي وإضافة لمسة تخصص -->
+    <!-- SERVICES SECTION -->
     <section id="services" class="py-20 px-5 bg-white fade-up">
         <div class="container mx-auto text-center mb-14"><span class="text-orange-600 font-bold uppercase">مجالات خبرتنا</span>
             <h2 class="text-4xl md:text-5xl font-bold mt-2 text-slate-800">خدماتنا الهندسية المتكاملة</h2>
@@ -441,28 +462,34 @@
         </div>
     </section>
 
-    <!-- TEAM SECTION (يحافظ على البيانات مع إضافة تخصصات) -->
+    <!-- TEAM SECTION (كامل بدون حذف) -->
     <section id="team" class="py-20 px-5 md:px-10 bg-slate-50 fade-up">
         <div class="container mx-auto text-center mb-12">
             <span class="text-orange-600 font-bold uppercase tracking-wider">فريق الخبراء</span>
             <h2 class="text-4xl md:text-5xl font-bold mt-2 text-slate-800">فريق دقة الإنجاز الذكي (DIDCO)</h2>
             <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto mt-4">نفخر بفريقنا المكون من نخبة من القيادات والمهندسين ذوي الخبرات العالية</p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
             <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/fawaz.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Fawaz Al-Harbi</h3><p class="text-orange-600 font-semibold">رئيس مجلس الإدارة</p></div>
             <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/fayez.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Fayez Al-Harbi</h3><p class="text-orange-600 font-semibold">الرئيس التنفيذي</p></div>
             <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/amonem.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">A.Monem Khalil</h3><p class="text-orange-600 font-semibold">مدير العمليات</p></div>
+            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/sherif.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Sherif Abou Senna</h3><p class="text-orange-600 font-semibold">مسؤول التسويق</p></div>
+            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/ibrahim.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Ibrahim Shu'aib</h3><p class="text-orange-600 font-semibold">مدير العلاقات العامة</p></div>
+            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/abdela-aziz.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Abel Aziz Nasser</h3><p class="text-orange-600 font-semibold">مدير المكتب الفني</p></div>
             <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/alaa.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Alaa Talba</h3><p class="text-orange-600 font-semibold">مدير العقود والمناقصات</p></div>
+            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/omar.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Omar Al-Khadrawi</h3><p class="text-orange-600 font-semibold">ضابط ارتباط العملاء</p></div>
+            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/mohamed.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Mohamed Mounir</h3><p class="text-orange-600 font-semibold">مدير التخطيط والمتابعة</p></div>
         </div>
     </section>
 
-    <!-- CERTIFICATES SECTION كما هي -->
+    <!-- CERTIFICATES SECTION -->
     <section id="certificates" class="py-20 px-5 bg-white fade-up">
         <div class="container mx-auto text-center mb-12"><span class="text-orange-600 font-bold uppercase">الاعتماد والجودة</span><h2 class="text-4xl font-bold text-slate-800 mt-2">شهادات رسمية وثقة مطلقة</h2><div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div></div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/ValueAdded Certificate.jpg" data-title="شهادة القيمة المضافة"><img src="./images/ValueAdded Certificate.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">القيمة المضافة</p></div>
             <div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/Zakat-and-Income- Registration- Certificate.jpg" data-title="شهادة الزكاة والدخل"><img src="./images/Zakat-and-Income- Registration- Certificate.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">الزكاة والدخل</p></div>
-            <!-- <div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/seal.jpeg" data-title="ختم الاعتماد"><img src="./images/seal.jpeg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">ختم الاعتماد</p></div> -->
+            <div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/seal.jpeg" data-title="ختم الاعتماد"><img src="./images/seal.jpeg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">ختم الاعتماد</p></div>
             <div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/national-address.jpg" data-title="العنوان الوطني"><img src="./images/national-address.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">العنوان الوطني</p></div>
         </div>
     </section>
@@ -477,18 +504,18 @@
     </section>
     <footer class="bg-slate-950 py-6 text-center text-gray-400 text-sm">© 2025 شركة دقة الإنجاز الذكي (DIDCO) للكهروميكانيك والإنشاءات الذكية - جميع الحقوق محفوظة</footer>
 
-    <!-- FLOATING ICONS + CHATBOT كما هو مع تحد简单-->
+    <!-- FLOATING ICONS + CHATBOT -->
     <div class="floating-icons"><a href="https://wa.me/966532750319" target="_blank" class="float-icon whatsapp-float"><i class="fab fa-whatsapp text-2xl"></i></a><a href="tel:+966148406618" class="float-icon call-float"><i class="fas fa-phone-alt text-2xl"></i></a></div>
-    <div class="chatbot-container" style="position: fixed; bottom: 25px; left: 25px; z-index: 1000;"><div id="chatToggle" class="chat-toggle" style="width: 55px; height: 55px; background: #f97316; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fas fa-comment-dots text-white text-2xl"></i></div><div id="chatWindow" class="chat-window hidden" style="position: absolute; bottom: 70px; left: 0; width: 340px; background: white; border-radius: 24px;"><div class="chat-header bg-slate-800 text-white p-3 flex justify-between"><span><i class="fas fa-robot ml-2"></i> مساعد DICDO</span><i id="closeChat" class="fas fa-times cursor-pointer"></i></div><div class="chat-messages h-80 overflow-y-auto p-3 bg-gray-50" id="chatMessages"><div class="bot-msg bg-gray-200 p-2 rounded-2xl">مرحباً! اسأل عن الكهروميكانيك، خطة الفرع، أو السمارت هوم.</div></div><div class="quick-btns flex flex-wrap gap-2 p-2"><span class="quick-btn bg-orange-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="تفاصيل خطة تشغيل الفرع">خطة الفرع</span><span class="quick-btn bg-orange-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="خدمات السمارت هوم">السمارت هوم</span><span class="quick-btn bg-orange-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="أرقام التواصل">التواصل</span></div><div class="chat-input-area flex p-2 gap-2"><input id="chatInput" class="flex-1 border rounded-full p-2" placeholder="اسأل..."><button id="sendChat" class="bg-orange-600 text-white rounded-full w-10 h-10"><i class="fas fa-paper-plane"></i></button></div></div></div>
+    <div class="chatbot-container" style="position: fixed; bottom: 25px; left: 25px; z-index: 1000;"><div id="chatToggle" class="chat-toggle" style="width: 55px; height: 55px; background: #f97316; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fas fa-comment-dots text-white text-2xl"></i></div><div id="chatWindow" class="chat-window hidden" style="position: absolute; bottom: 70px; left: 0; width: 340px; background: white; border-radius: 24px;"><div class="chat-header bg-slate-800 text-white p-3 flex justify-between"><span><i class="fas fa-robot ml-2"></i> مساعد DIDCO</span><i id="closeChat" class="fas fa-times cursor-pointer"></i></div><div class="chat-messages h-80 overflow-y-auto p-3 bg-gray-50" id="chatMessages"><div class="bot-msg bg-gray-200 p-2 rounded-2xl">مرحباً! اسأل عن الكهروميكانيك، خطة الفرع، أو السمارت هوم.</div></div><div class="quick-btns flex flex-wrap gap-2 p-2"><span class="quick-btn bg-orange-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="تفاصيل خطة تشغيل الفرع">خطة الفرع</span><span class="quick-btn bg-orange-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="خدمات السمارت هوم">السمارت هوم</span><span class="quick-btn bg-orange-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="أرقام التواصل">التواصل</span></div><div class="chat-input-area flex p-2 gap-2"><input id="chatInput" class="flex-1 border rounded-full p-2" placeholder="اسأل..."><button id="sendChat" class="bg-orange-600 text-white rounded-full w-10 h-10"><i class="fas fa-paper-plane"></i></button></div></div></div>
 
     <script>
-        // كود التشغيل (سلايدر، مودال، شات بوت محسن)
+        // Slider
         const slides = document.querySelectorAll('.slide');
         let currentSlide = 0;
-        function showSlide(index){ slides.forEach((s,i)=> s.style.opacity = i===index ? '1':'0'); dots.forEach((d,i)=> i===index ? d.classList.add('bg-white','scale-125') : d.classList.remove('bg-white','scale-125')); currentSlide=index; }
+        function showSlide(index) { if(index<0) index=slides.length-1; if(index>=slides.length) index=0; slides.forEach((s,i)=> s.style.opacity = i===index ? '1':'0'); dots.forEach((d,i)=> i===index ? d.classList.add('bg-white','scale-125') : d.classList.remove('bg-white','scale-125')); currentSlide=index; }
         let slideInterval = setInterval(()=>{ showSlide((currentSlide+1)%slides.length); },5500);
-        document.getElementById('prevSlide')?.addEventListener('click',()=>{ showSlide((currentSlide-1+slides.length)%slides.length); clearInterval(slideInterval); slideInterval=setInterval(()=>{ showSlide((currentSlide+1)%slides.length); },5500); });
-        document.getElementById('nextSlide')?.addEventListener('click',()=>{ showSlide((currentSlide+1)%slides.length); clearInterval(slideInterval); slideInterval=setInterval(()=>{ showSlide((currentSlide+1)%slides.length); },5500); });
+        document.getElementById('prevSlide')?.addEventListener('click',()=>{ showSlide(currentSlide-1); clearInterval(slideInterval); slideInterval=setInterval(()=>{ showSlide((currentSlide+1)%slides.length); },5500); });
+        document.getElementById('nextSlide')?.addEventListener('click',()=>{ showSlide(currentSlide+1); clearInterval(slideInterval); slideInterval=setInterval(()=>{ showSlide((currentSlide+1)%slides.length); },5500); });
         const dots = document.querySelectorAll('.dot');
         dots.forEach((dot,i)=> dot.addEventListener('click',()=>{ showSlide(i); clearInterval(slideInterval); slideInterval=setInterval(()=>{ showSlide((currentSlide+1)%slides.length); },5500); }));
         showSlide(0);
@@ -507,7 +534,7 @@
         function botReply(q){
             if(q.includes('خطة الفرع')) return "خطة تشغيل الفرع الكبير: جدول زمني 12 أسبوعاً، فرق عمل (كهروميكانيك، ديكور، سمارت هوم)، وبدء التنفيذ الأسبوع القادم.";
             if(q.includes('سمارت هوم')) return "نوفر أنظمة سمارت هوم شاملة: تحكم بالإضاءة، التكييف، الستائر، كاميرات، وإنذار. نبرمجها وندمجها مع بنية الكهروميكانيك.";
-            if(q.includes('تواصل')) return "هاتف: +966148406618، واتساب: +966532750319. في انتظارك.";
+            if(q.includes('تواصل')) return "هاتف: +966148406618، واتساب: +966532750319.";
             if(q.includes('كهروميكانيك')) return "نحن العمود الفقري في الكهروميكانيك: تكييف، كهرباء، صرف صحي، حريق، والتيار الخفيف (السمارت هوم).";
             return "مرحباً! يمكنك سؤالي عن خدمات الكهروميكانيك، خطة الفرع، أو السمارت هوم.";
         }
@@ -516,8 +543,11 @@
         toggleChat.onclick=()=> chatWindow.classList.toggle('hidden');
         closeChat.onclick=()=> chatWindow.classList.add('hidden');
         document.querySelectorAll('.quick-btn').forEach(btn=>{ btn.onclick=()=>{ addMsg(btn.innerText,true); setTimeout(()=>{ addMsg(botReply(btn.innerText.toLowerCase()),false); },300); }; });
+        // GSAP Animations
         gsap.registerPlugin(ScrollTrigger);
         document.querySelectorAll('.fade-up').forEach(el=>{ gsap.fromTo(el,{opacity:0,y:40},{opacity:1,y:0,duration:0.8,scrollTrigger:{trigger:el,start:'top 85%'}}); });
+        gsap.utils.toArray('.team-card, .stats-card, .why-card, .service-card').forEach((card,i)=> { gsap.fromTo(card,{scale:0.95,opacity:0},{scale:1,opacity:1,duration:0.5,delay:i*0.05,scrollTrigger:{trigger:card.closest('section'),start:'top 85%'}}); });
     </script>
 </body>
+
 </html>
