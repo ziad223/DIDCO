@@ -8,7 +8,7 @@
     <meta name="description"
         content="دقة الإنجاز الذكي (DIDCO) - شركة رائدة في الكهروميكانيك والإنشاءات الذكية بالمدينة المنورة. متخصصون في التكييف، الأنظمة الكهربائية، اسمارت هوم، والديكورات الهندسية. خبرة 5+ عاماً.">
     <meta name="keywords" content="دقة الإنجاز الذكي, DIDCO, كهروميكانيك, سمارت هوم, تكييف, ديكور, مقاولات, المدينة المنورة, أنظمة ذكية">
-    <meta name="author" content="دقة الإنجاز الذكي (DIDCO) للكهروميكانيك والإنشاءات الذكية">
+    <meta name="author" content="دقة الإنجاز الذكي (DIDCO) للكهروميكانيك   والإنشاءات الذكية">
     <meta name="robots" content="index, follow">
     <title>دقة الإنجاز الذكي (DIDCO) | خبير الكهروميكانيك والأنظمة الذكية</title>
     <meta property="og:title" content="دقة الإنجاز الذكي (DIDCO) | كهروميكانيك و سمارت هوم - جودة وإتقان">
@@ -43,8 +43,9 @@
             overflow-x: hidden;
         }
 
+        /* Updated color scheme based on logo: #1d699b (main blue) and #494b4a (dark gray) */
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.5) 100%);
+            background: linear-gradient(135deg, rgba(29,105,155,0.85) 0%, rgba(73,75,74,0.75) 100%);
         }
 
         .cert-card:hover,
@@ -62,18 +63,16 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
-
         ::-webkit-scrollbar-track {
             background: #e2e8f0;
         }
-
         ::-webkit-scrollbar-thumb {
-            background: #c2410c;
+            background: #1d699b;
             border-radius: 10px;
         }
 
         .bg-pattern {
-            background-image: radial-gradient(#f9731620 1.2px, transparent 1.2px);
+            background-image: radial-gradient(#1d699b20 1.2px, transparent 1.2px);
             background-size: 32px 32px;
         }
 
@@ -110,26 +109,16 @@
             color: white;
             animation-delay: 0s;
         }
-
         .call-float {
-            background: #f97316;
+            background: #1d699b;
             color: white;
             animation-delay: 0.3s;
         }
 
         @keyframes float-glow {
-            0% {
-                transform: translateY(0px);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            }
-            50% {
-                transform: translateY(-5px);
-                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
-            }
-            100% {
-                transform: translateY(0px);
-                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            }
+            0% { transform: translateY(0px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);}
+            50% { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);}
+            100% { transform: translateY(0px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);}
         }
 
         .glass-nav {
@@ -144,7 +133,6 @@
             font-weight: 600;
             white-space: nowrap;
         }
-
         .nav-link::after {
             content: '';
             position: absolute;
@@ -152,23 +140,19 @@
             height: 2px;
             bottom: -4px;
             right: 0;
-            background-color: #f97316;
+            background-color: #1d699b;
             transition: 0.3s;
         }
-
         .nav-link:hover::after {
             width: 100%;
         }
-
         .nav-link:hover {
-            color: #f97316;
+            color: #1d699b;
         }
-
         .nav-link.active {
-            color: #f97316;
+            color: #1d699b;
             font-weight: 700;
         }
-
         .nav-link.active::after {
             width: 100%;
         }
@@ -197,12 +181,10 @@
             transition: all 0.3s ease;
             backdrop-filter: blur(8px);
         }
-
         .modal-overlay.active {
             opacity: 1;
             visibility: visible;
         }
-
         .modal-content {
             max-width: 90%;
             max-height: 80%;
@@ -213,12 +195,10 @@
             transition: transform 0.3s ease;
             padding: 20px;
         }
-
         .modal-overlay.active .modal-content {
             transform: scale(1);
         }
-
-               .modal-image-display {
+        .modal-image-display {
             max-width: 90vw;
             max-height: 75vh !important;
             width: auto;
@@ -227,7 +207,6 @@
             border-radius: 20px;
             box-shadow: 0 25px 50px -12px black;
         }
-
         .modal-video {
             max-width: 90vw;
             max-height: 85vh;
@@ -235,8 +214,6 @@
             height: auto;
             border-radius: 20px;
         }
-          
-
         .timeline-step {
             position: relative;
             padding-right: 2rem;
@@ -248,7 +225,7 @@
             top: 0.5rem;
             width: 12px;
             height: 12px;
-            background: #f97316;
+            background: #1d699b;
             border-radius: 50%;
         }
         .timeline-step:not(:last-child)::after {
@@ -270,9 +247,7 @@
             white-space: nowrap;
         }
         @media (min-width: 1280px) {
-            .nav-container {
-                gap: 1.75rem;
-            }
+            .nav-container { gap: 1.75rem; }
         }
 
         .project-media-grid {
@@ -291,14 +266,14 @@
         }
         .media-thumb:hover {
             transform: scale(1.02);
-            border-color: #f97316;
+            border-color: #1d699b;
         }
         .project-doc-btn {
             background: #f1f5f9;
             transition: 0.2s;
         }
         .project-doc-btn:hover {
-            background: #f97316;
+            background: #1d699b;
             color: white;
         }
 
@@ -327,11 +302,11 @@
             object-fit: contain;
         }
         .partner-swiper .swiper-pagination-bullet-active {
-            background: #f97316;
+            background: #1d699b;
         }
         .partner-swiper .swiper-button-next,
         .partner-swiper .swiper-button-prev {
-            color: #f97316;
+            color: #1d699b;
             background: white;
             width: 33px;
             height: 33px;
@@ -340,11 +315,10 @@
         }
         @media (max-width: 768px) {
             .partner-swiper .swiper-button-next,
-            .partner-swiper .swiper-button-prev {
-                display: none;
-            }
+            .partner-swiper .swiper-button-prev { display: none; }
         }
-                      .gallery-nav-btn {
+
+        .gallery-nav-btn {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -368,12 +342,8 @@
             transform: translateY(-50%) scale(1.08);
             background: transparent;
         }
-        .gallery-prev {
-            left: 20px;
-        }
-        .gallery-next {
-            right: 20px;
-        }
+        .gallery-prev { left: 20px; }
+        .gallery-next { right: 20px; }
         .close-gallery-btn {
             position: absolute;
             top: 16px;
@@ -392,7 +362,7 @@
             font-size: 20px;
         }
         .close-gallery-btn:hover {
-            background: #f97316;
+            background: #1d699b;
             transform: scale(1.05);
         }
     </style>
@@ -404,12 +374,12 @@
     <div class="fixed top-0 left-0 w-full z-50 bg-slate-800 text-white text-sm py-2.5 border-b border-slate-700"
         id="topBar">
         <div class="container mx-auto px-5 md:px-10 flex justify-between items-center">
-            <div class="flex items-center gap-1.5"><i class="fas fa-map-marker-alt text-orange-400 text-xs"></i><span
+            <div class="flex items-center gap-1.5"><i class="fas fa-map-marker-alt text-blue-400 text-xs"></i><span
                     class="hidden sm:inline">المدينة المنورة - حي القصواء - مخطط الأمير نايف</span><span
                     class="sm:hidden">المدينة المنورة</span></div>
             <div class="flex items-center gap-5" dir="ltr">
-                <span class="phone-ltr"><i class="fas fa-phone-alt text-orange-400 text-xs"></i><a
-                        href="tel:+966148406618" class="hover:text-orange-300 transition mr-1">+966 14 840
+                <span class="phone-ltr"><i class="fas fa-phone-alt text-blue-400 text-xs"></i><a
+                        href="tel:+966148406618" class="hover:text-blue-300 transition mr-1">+966 14 840
                         6618</a></span>
                 <span class="phone-ltr hidden sm:inline-flex"><i class="fab fa-whatsapp text-green-400 text-xs"></i><a
                         href="https://wa.me/966532750319" target="_blank"
@@ -438,9 +408,9 @@
             </nav>
             <div class="flex items-center justify-end gap-3 shrink-0">
                 <a href="#contact"
-                    class="hidden md:inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg transition-all duration-300"><i
+                    class="hidden md:inline-flex items-center gap-2 bg-[#1d699b] hover:bg-[#494b4a] text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg transition-all duration-300"><i
                         class="fas fa-envelope text-xs"></i>طلب عرض سعر</a>
-                <button id="menuBtn" class="md:hidden text-2xl text-slate-700 hover:text-orange-600 transition"><i
+                <button id="menuBtn" class="md:hidden text-2xl text-slate-700 hover:text-[#1d699b] transition"><i
                         class="fas fa-bars"></i></button>
             </div>
         </div>
@@ -453,7 +423,7 @@
             <a href="#projects" class="mobile-link font-semibold">أعمالنا</a>
             <a href="#partners" class="mobile-link font-semibold">شركاؤنا</a>
             <a href="#contact" class="mobile-link font-semibold">اتصل بنا</a>
-            <a href="#contact" class="mt-2 flex items-center justify-center gap-2 bg-orange-600 text-white px-5 py-2.5 rounded-full font-bold text-sm">طلب عرض سعر</a>
+            <a href="#contact" class="mt-2 flex items-center justify-center gap-2 bg-[#1d699b] text-white px-5 py-2.5 rounded-full font-bold text-sm">طلب عرض سعر</a>
         </div>
     </header>
 
@@ -469,12 +439,12 @@
             <div class="absolute inset-0 hero-overlay"></div>
             <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4 z-20">
                 <h1 class="text-4xl md:text-3xl lg:text-5xl font-extrabold text-white drop-shadow-lg">دقة الإنجاز الذكي (DIDCO) <span
-                        class="text-orange-400">للكهروميكانيك</span> والأنظمة الذكية</h1>
+                        class="text-[#8fc9ff]">للكهروميكانيكال</span> والأنظمة الذكية</h1>
                 <p class="text-xl md:text-2xl text-gray-100 mt-4 max-w-3xl">حلول متكاملة: تكييف، كهرباء، سمارت هوم، ديكور هندسي – من التصميم إلى التشغيل</p>
                 <div class="flex gap-4 mt-8"><a href="#services"
-                        class="bg-orange-600 hover:bg-orange-700 px-8 py-3 rounded-full text-white font-bold shadow-lg transition">خدماتنا</a><a
+                        class="bg-[#1d699b] hover:bg-[#494b4a] px-8 py-3 rounded-full text-white font-bold shadow-lg transition">خدماتنا</a><a
                         href="#branch-plan"
-                        class="border-2 border-white hover:bg-white hover:text-orange-700 px-8 py-3 rounded-full text-white font-bold transition">خطة تشغيل الفرع</a></div>
+                        class="border-2 border-white hover:bg-white hover:text-[#1d699b] px-8 py-3 rounded-full text-white font-bold transition">خطة تشغيل الفرع</a></div>
             </div>
             <button id="prevSlide" class="absolute left-4 top-1/2 hidden md:block -translate-y-1/2 bg-black/40 hover:bg-black/60 p-3 rounded-full text-white text-xl transition z-30"><i class="fas fa-chevron-left"></i></button>
             <button id="nextSlide" class="absolute right-4 top-1/2 hidden md:block -translate-y-1/2 bg-black/40 hover:bg-black/60 p-3 rounded-full text-white text-xl transition z-30"><i class="fas fa-chevron-right"></i></button>
@@ -487,66 +457,66 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about" class="py-20 px-5 md:px-10 bg-white fade-up"><div class="container mx-auto text-center mb-8"><span class="text-orange-600 font-bold uppercase tracking-wider">خبراء الكهروميكانيك</span><h2 class="text-3xl md:text-4xl font-bold mt-2 text-slate-800">دقة الإنجاز الذكي (DIDCO) : العمود الفقري للأنظمة الكهربائية والميكانيكية</h2><div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div></div><div class="flex flex-col lg:flex-row gap-12 max-w-7xl mx-auto"><div class="lg:w-1/2"><p class="text-gray-700 text-lg leading-relaxed mb-5"><strong class="text-orange-700">دقة الإنجاز الذكي (DIDCO)</strong> ليست مجرد شركة إنشاءات، بل هي <strong class="text-orange-600">العمود الفقري المتخصص في الكهروميكانيك</strong> والأنظمة الذكية. منذ 2012، نقدم حلولاً هندسية متكاملة تبدأ من <strong>تصميم أنظمة التكييف المركزية</strong>، مروراً بـ <strong>شبكات الكهرباء الأساسية والتيار الخفيف</strong>، وصولاً إلى <strong>أنظمة اسمارت هوم المتطورة</strong>، وأعمال الصرف الصحي، ومكافحة الحريق.</p><p class="text-gray-700 text-lg leading-relaxed mb-5">نتفوق في <strong>تنفيذ الديكورات الهندسية</strong> التي تتناغم مع البنية التحتية للكهروميكانيك، حيث نعد خطط تشغيل دقيقة للديكور واسمارت هوم بالتوازي مع الأعمال الميكانيكية لضمان التكامل. نمتلك فريقاً من المهندسين المتخصصين في تكييف الهواء (HVAC)، والكهرباء، وأنظمة التحكم الذكية.</p><div class="bg-orange-50 p-5 rounded-xl mt-6 border-r-4 border-orange-500"><p class="font-bold text-orange-800 mb-2"><i class="fas fa-microchip ml-2"></i> تخصصنا الذكي</p><p class="text-gray-700">من تصميم اللوحات الكهربائية إلى برمجة الإضاءة الذكية وأنظمة الأتمتة – نقدم حلاً شاملاً للكهروميكانيك والديكور تحت سقف واحد.</p></div></div><div class="lg:w-1/2 bg-slate-50 p-6 rounded-2xl shadow-md"><h3 class="text-xl font-bold border-r-4 border-orange-500 pr-3 mb-4">بيانات الشركة الرسمية</h3><div class="grid grid-cols-2 gap-4"><div class="bg-white p-3 rounded-xl text-center shadow-sm"><img src="./images/national-address.jpg" class="h-16 mx-auto object-contain" onerror="this.src='https://placehold.co/200x100'"><p class="font-bold mt-2">العنوان الوطني</p></div><div class="bg-white p-3 rounded-xl text-center shadow-sm"><img src="./images/tryka.jpg" class="h-16 mx-auto object-contain" onerror="this.src='https://placehold.co/200x100'"><p class="font-bold mt-2"> شهادة أعتماد</p></div><div class="bg-white p-3 rounded-xl text-center shadow-sm"><img src="./images/Zakat-and-Income- Registration- Certificate.jpg" class="h-16 mx-auto object-contain" onerror="this.src='https://placehold.co/200x100'"><p class="font-bold mt-2">الزكاة والدخل</p></div><div class="bg-white p-3 rounded-xl text-center shadow-sm"><img src="./images/ValueAdded Certificate.jpg" class="h-16 mx-auto object-contain" onerror="this.src='https://placehold.co/200x100'"><p class="font-bold mt-2">القيمة المضافة</p></div></div></div></div></section>
+    <section id="about" class="py-20 px-5 md:px-10 bg-white fade-up"><div class="container mx-auto text-center mb-8"><span class="text-[#1d699b] font-bold uppercase tracking-wider">خبراء الكهروميكانيك</span><h2 class="text-3xl md:text-4xl font-bold mt-2 text-slate-800">دقة الإنجاز الذكي (DIDCO) : العمود الفقري للأنظمة الكهربائية والميكانيكية</h2><div class="w-24 h-1 bg-[#1d699b] mx-auto mt-4 rounded-full"></div></div><div class="flex flex-col lg:flex-row gap-12 max-w-7xl mx-auto"><div class="lg:w-1/2"><p class="text-gray-700 text-lg leading-relaxed mb-5"><strong class="text-[#1d699b]">دقة الإنجاز الذكي (DIDCO)</strong> ليست مجرد شركة إنشاءات، بل هي <strong class="text-[#1d699b]">العمود الفقري المتخصص في الكهروميكانيك</strong> والأنظمة الذكية. منذ 2012، نقدم حلولاً هندسية متكاملة تبدأ من <strong>تصميم أنظمة التكييف المركزية</strong>، مروراً بـ <strong>شبكات الكهرباء الأساسية والتيار الخفيف</strong>، وصولاً إلى <strong>أنظمة اسمارت هوم المتطورة</strong>، وأعمصرف الصحي، ومكافحة الحريق.</p><p class="text-gray-700 text-lg leading-relaxed mb-5">نتفوق في <strong>تنفيذ الديكورات الهندسية</strong> التي تتناغم مع البنية التحتية للكهروميكانيك ال ، حيث نعد خطط تشغيل دقيقة للديكور واسمارت هوم بالتوازي مع الأعمميكانيكية لضمان التكامل. نمتلك فريقاً من المهندسين المتخصصين في تكييف الهواء (HVAC)، والكهرباء، وأنظمة التحكم الذكية.</p><div class="bg-blue-50 p-5 rounded-xl mt-6 border-r-4 border-[#1d699b]"><p class="font-bold text-[#1d699b] mb-2"><i class="fas fa-microchip ml-2"></i> تخصصنا الذكي</p><p class="text-gray-700">من تصميم اللوحات الكهربائية إلى برمجة الإضاءة الذكية وأنظمة الأتمتة – نقدم حلاً شاملاً للكهروميكانيك ال  والديكور تحت سقف واحد.</p></div></div><div class="lg:w-1/2 bg-slate-50 p-6 rounded-2xl shadow-md"><h3 class="text-xl font-bold border-r-4 border-[#1d699b] pr-3 mb-4">بيانات الشركة الرسمية</h3><div class="grid grid-cols-2 gap-4"><div class="bg-white p-3 rounded-xl text-center shadow-sm"><img src="./images/national-address.jpg" class="h-16 mx-auto object-contain" onerror="this.src='https://placehold.co/200x100'"><p class="font-bold mt-2">العنوان الوطني</p></div><div class="bg-white p-3 rounded-xl text-center shadow-sm"><img src="./images/tryka.jpg" class="h-16 mx-auto object-contain" onerror="this.src='https://placehold.co/200x100'"><p class="font-bold mt-2"> شهادة أعتماد</p></div><div class="bg-white p-3 rounded-xl text-center shadow-sm"><img src="./images/Zakat-and-Income- Registration- Certificate.jpg" class="h-16 mx-auto object-contain" onerror="this.src='https://placehold.co/200x100'"><p class="font-bold mt-2">الزكاة والدخل</p></div><div class="bg-white p-3 rounded-xl text-center shadow-sm"><img src="./images/ValueAdded Certificate.jpg" class="h-16 mx-auto object-contain" onerror="this.src='https://placehold.co/200x100'"><p class="font-bold mt-2">القيمة المضافة</p></div></div></div></div></section>
 
-    <section id="electromechanical" class="py-20 px-5 bg-orange-50 fade-up"><div class="container mx-auto text-center mb-12"><span class="text-orange-600 font-bold uppercase">خبرتنا الجوهرية</span><h2 class="text-4xl font-bold text-slate-800">الكهروميكانيك: من التصميم إلى التشغيل</h2><div class="w-20 h-1 bg-orange-500 mx-auto mt-3"></div></div><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-wind text-5xl text-orange-600 mb-3"></i><h3 class="text-2xl font-bold">أنظمة التكييف (HVAC)</h3><p>تصميم وتنفيذ أنظمة تكييف مركزية، وحدات VRF، وشبكات التهوية للمشاريع الضخمة.</p></div><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-bolt text-5xl text-orange-600 mb-3"></i><h3 class="text-2xl font-bold">الكهرباء الأساسية</h3><p>لوحات توزيع، كابلات، إنارة وقوى – وفق أعلى معايير الأمان والكفاءة.</p></div><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-microchip text-5xl text-orange-600 mb-3"></i><h3 class="text-2xl font-bold">التيار الخفيف واسمارت هوم</h3><p>شبكات البيانات، كاميرات المراقبة، أتمتة المنازل والتحكم الذكي بالإضاءة والستائر والتكييف.</p></div><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-fire-extinguisher text-5xl text-orange-600 mb-3"></i><h3 class="text-2xl font-bold">أنظمة الحريق</h3><p>شبكات رشاشات، إنذار حريق، وخراطيم وفق كود الدفاع المدني.</p></div><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-water text-5xl text-orange-600 mb-3"></i><h3 class="text-2xl font-bold">الصرف الصحي والتغذية</h3><p>شبكات سباكة، مضخات، وخزانات مياه بتصاميم دقيقة.</p></div><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-palette text-5xl text-orange-600 mb-3"></i><h3 class="text-2xl font-bold">الديكور الهندسي</h3><p>تشطيبات داخلية، أسقف معلقة، وأعمال جبس بورد تتماشى مع مسارات التكييف والكهرباء.</p></div></div></section>
+    <section id="electromechanical" class="py-20 px-5 bg-blue-50 fade-up"><div class="container mx-auto text-center mb-12"><span class="text-[#1d699b] font-bold uppercase">خبرتنا الجوهرية</span><h2 class="text-4xl font-bold text-slate-800">الكهروميكانيك: من التصميم إلى التشغيل</h2><div class="w-20 h-1 bg-[#1d699b] mx-auto mt-3"></div></div><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-wind text-5xl text-[#1d699b] mb-3"></i><h3 class="text-2xl font-bold">أنظمة التكييف (HVAC)</h3><p>تصميم وتنفيذ أنظمة تكييف مركزية، وحدات VRF، وشبكات التهوية للمشاريع الضخمة.</p></div><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-bolt text-5xl text-[#1d699b] mb-3"></i><h3 class="text-2xl font-bold">الكهرباء الأساسية</h3><p>لوحات توزيع، كابلات، إنارة وقوى – وفق أعلى معايير الأمان والكفاءة.</p></div><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-microchip text-5xl text-[#1d699b] mb-3"></i><h3 class="text-2xl font-bold">التيار الخفيف واسمارت هوم</h3><p>شبكات البيانات، كاميرات المراقبة، أتمتة المنازل والتحكم الذكي بالإضاءة والستائر والتكييف.</p></div><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-fire-extinguisher text-5xl text-[#1d699b] mb-3"></i><h3 class="text-2xl font-bold">أنظمة الحريق</h3><p>شبكات رشاشات، إنذار حريق، وخراطيم وفق كود الدفاع المدني.</p></div><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-water text-5xl text-[#1d699b] mb-3"></i><h3 class="text-2xl font-bold">الصرف الصحي والتغذية</h3><p>شبكات سباكة، مضخات، وخزانات مياه بتصاميم دقيقة.</p></div><div class="bg-white p-6 rounded-2xl shadow-lg text-center"><i class="fas fa-palette text-5xl text-[#1d699b] mb-3"></i><h3 class="text-2xl font-bold">الديكور الهندسي</h3><p>تشطيبات داخلية، أسقف معلقة، وأعمال جبس بورد تتماشى مع مسارات التكييف والكهرباء.</p></div></div></section>
 
-    <!-- PROJECTS SECTION with enhanced gallery modal + PROJECT 5 الراجحي -->
+    <!-- PROJECTS SECTION unchanged, but colors updated via CSS and buttons -->
     <section id="projects" class="py-20 px-5 md:px-10 bg-gray-50 fade-up">
         <div class="container mx-auto text-center mb-12">
-            <span class="text-orange-600 font-bold uppercase tracking-wider">إنجازاتنا الميدانية</span>
+            <span class="text-[#1d699b] font-bold uppercase tracking-wider">إنجازاتنا الميدانية</span>
             <h2 class="text-4xl md:text-5xl font-bold mt-2 text-slate-800">سابقة الأعمال والمشاريع</h2>
-            <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
+            <div class="w-24 h-1 bg-[#1d699b] mx-auto mt-4 rounded-full"></div>
             <p class="text-gray-600 max-w-2xl mx-auto mt-4">نفخر بتنفيذ مشاريع ضخمة في الكهروميكانيك، أنظمة الحريق، التكييف، والصيانة المتخصصة</p>
         </div>
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
             <!-- Project 1 -->
             <div class="project-card bg-white rounded-2xl shadow-xl overflow-hidden transition-all">
-                <div class="bg-orange-50 px-6 py-4 border-b"><h3 class="text-2xl font-bold text-slate-800"><i class="fas fa-mosque ml-2 text-orange-600"></i> مسجد ميقات المدينة</h3><p class="text-sm text-gray-500">16 صورة | عرض تقديمي | عقد رسمي</p></div>
+                <div class="bg-blue-50 px-6 py-4 border-b"><h3 class="text-2xl font-bold text-slate-800"><i class="fas fa-mosque ml-2 text-[#1d699b]"></i> مسجد ميقات المدينة</h3><p class="text-sm text-gray-500">16 صورة | عرض تقديمي | عقد رسمي</p></div>
                 <div class="p-5">
                     <div class="flex flex-wrap gap-3 mb-4">
                         <a href="./pdf/project-1.pdf" target="_blank" class="project-doc-btn flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-file-pdf text-red-500"></i> عرض المشروع PDF</a>
-                        <a href="./pdf/project-1-contract.pdf" target="_blank" class="project-doc-btn flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-file-signature text-orange-600"></i> العقد</a>
+                        <a href="./pdf/project-1-contract.pdf" target="_blank" class="project-doc-btn flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-file-signature text-[#1d699b]"></i> العقد</a>
                     </div>
                     <div class="project-media-grid" id="gallery-1" data-project="project1"></div>
                 </div>
             </div>
             <!-- Project 2 -->
             <div class="project-card bg-white rounded-2xl shadow-xl overflow-hidden transition-all">
-                <div class="bg-orange-50 px-6 py-4 border-b"><h3 class="text-2xl font-bold text-slate-800"><i class="fas fa-fire-extinguisher ml-2 text-orange-600"></i> مكافحة حريق - مصنع التجميع (First Fix)</h3><p class="text-sm text-gray-500">11 صورة | عرض تقديمي | عقد</p></div>
+                <div class="bg-blue-50 px-6 py-4 border-b"><h3 class="text-2xl font-bold text-slate-800"><i class="fas fa-fire-extinguisher ml-2 text-[#1d699b]"></i> مكافحة حريق - مصنع التجميع (First Fix)</h3><p class="text-sm text-gray-500">11 صورة | عرض تقديمي | عقد</p></div>
                 <div class="p-5">
                     <div class="flex flex-wrap gap-3 mb-4">
                         <a href="./pdf/project-2.pdf" target="_blank" class="project-doc-btn flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-file-pdf text-red-500"></i> بريزنتيشن المشروع</a>
-                        <a href="./pdf/project-2-contract.pdf" target="_blank" class="project-doc-btn flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-file-signature text-orange-600"></i> العقد</a>
+                        <a href="./pdf/project-2-contract.pdf" target="_blank" class="project-doc-btn flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-file-signature text-[#1d699b]"></i> العقد</a>
                     </div>
                     <div class="project-media-grid" id="gallery-2" data-project="project2"></div>
                 </div>
             </div>
             <!-- Project 3 -->
             <div class="project-card bg-white rounded-2xl shadow-xl overflow-hidden transition-all">
-                <div class="bg-orange-50 px-6 py-4 border-b"><h3 class="text-2xl font-bold text-slate-800"><i class="fas fa-microchip ml-2 text-orange-600"></i> كهرباء وميكانيكا - مصنع إطارات (ايمكو تيك)</h3><p class="text-sm text-gray-500">7 صور + 2 فيديو | عقد رسمي</p></div>
+                <div class="bg-blue-50 px-6 py-4 border-b"><h3 class="text-2xl font-bold text-slate-800"><i class="fas fa-microchip ml-2 text-[#1d699b]"></i> كهرباء وميكانيكا - مصنع إطارات (ايمكو تيك)</h3><p class="text-sm text-gray-500">7 صور + 2 فيديو | عقد رسمي</p></div>
                 <div class="p-5">
                     <div class="flex flex-wrap gap-3 mb-4">
-                        <a href="./pdf/project-3-contract.pdf" target="_blank" class="project-doc-btn flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-file-signature text-orange-600"></i> العقد</a>
+                        <a href="./pdf/project-3-contract.pdf" target="_blank" class="project-doc-btn flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-file-signature text-[#1d699b]"></i> العقد</a>
                     </div>
                     <div class="project-media-grid" id="gallery-3" data-project="project3"></div>
                 </div>
             </div>
             <!-- Project 4 -->
             <div class="project-card bg-white rounded-2xl shadow-xl overflow-hidden transition-all">
-                <div class="bg-orange-50 px-6 py-4 border-b"><h3 class="text-2xl font-bold text-slate-800"><i class="fas fa-handshake ml-2 text-orange-600"></i> صيانة دورية - شركة اسس للاستشارات الهندسية</h3><p class="text-sm text-gray-500">عقد صيانة معتمد</p></div>
+                <div class="bg-blue-50 px-6 py-4 border-b"><h3 class="text-2xl font-bold text-slate-800"><i class="fas fa-handshake ml-2 text-[#1d699b]"></i> صيانة دورية - شركة اسس للاستشارات الهندسية</h3><p class="text-sm text-gray-500">عقد صيانة معتمد</p></div>
                 <div class="p-5 text-center">
-                    <div class="flex justify-center mb-4"><i class="fas fa-file-contract text-7xl text-orange-200"></i></div>
-                    <a href="./pdf/project-4-contract.pdf" target="_blank" class="inline-flex items-center gap-3 bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-full font-bold transition"><i class="fas fa-download"></i> تحميل العقد / الاطلاع</a>
+                    <div class="flex justify-center mb-4"><i class="fas fa-file-contract text-7xl text-blue-200"></i></div>
+                    <a href="./pdf/project-4-contract.pdf" target="_blank" class="inline-flex items-center gap-3 bg-[#1d699b] hover:bg-[#494b4a] text-white px-6 py-3 rounded-full font-bold transition"><i class="fas fa-download"></i> تحميل العقد / الاطلاع</a>
                     <p class="text-gray-500 text-sm mt-4">اتفاقية صيانة شاملة لأنظمة الكهروميكانيك والأنظمة الذكية</p>
                 </div>
             </div>
             <!-- NEW PROJECT 5: الراجحي -->
             <div class="project-card bg-white rounded-2xl shadow-xl overflow-hidden transition-all md:col-span-2 lg:col-span-1">
-                <div class="bg-orange-50 px-6 py-4 border-b"><h3 class="text-2xl font-bold text-slate-800"><i class="fas fa-building ml-2 text-orange-600"></i> مشروع الراجحي (التكييف والأنظمة الكهربائية)</h3><p class="text-sm text-gray-500">15 صورة معمارية وتنفيذية | عقد رسمي معتمد</p></div>
+                <div class="bg-blue-50 px-6 py-4 border-b"><h3 class="text-2xl font-bold text-slate-800"><i class="fas fa-building ml-2 text-[#1d699b]"></i> مشروع الراجحي (التكييف والأنظمة الكهربائية)</h3><p class="text-sm text-gray-500">15 صورة معمارية وتنفيذية | عقد رسمي معتمد</p></div>
                 <div class="p-5">
                     <div class="flex flex-wrap gap-3 mb-4">
-                        <a href="./pdf/project-5-contract.pdf" target="_blank" class="project-doc-btn flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-file-signature text-orange-600"></i> عقد مشروع الراجحي</a>
+                        <a href="./pdf/project-5-contract.pdf" target="_blank" class="project-doc-btn flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm font-semibold"><i class="fas fa-file-signature text-[#1d699b]"></i> عقد مشروع الراجحي</a>
                     </div>
                     <div class="project-media-grid" id="gallery-5" data-project="project5"></div>
                 </div>
@@ -554,42 +524,26 @@
         </div>
     </section>
 
-    <section id="branch-plan" class="py-20 px-5 md:px-10 bg-white fade-up"><div class="container mx-auto max-w-6xl"><div class="text-center mb-12"><span class="text-orange-600 font-bold uppercase">الخطة التنفيذية</span><h2 class="text-4xl font-bold text-slate-800">خطة تشغيل الفرع الكبير – تجهيزات متكاملة</h2><div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div><p class="text-gray-600 max-w-2xl mx-auto mt-4">نعلن البدء في تجهيزات الفرع الجديد اعتباراً من <strong class="text-orange-600">الأسبوع القادم</strong> وفق خطة زمنية محكمة وتوزيع دقيق للفرق.</p></div><div class="grid lg:grid-cols-2 gap-10"><div class="bg-slate-50 rounded-2xl p-6 shadow-lg"><h3 class="text-2xl font-bold border-r-4 border-orange-500 pr-3 mb-5"><i class="fas fa-calendar-week ml-2 text-orange-600"></i> الجدول الزمني (12 أسبوعاً)</h3><div class="space-y-4"><div class="timeline-step"><span class="font-bold text-orange-700">الأسبوع 1-2:</span> إنهاء التصاميم الهندسية واعتماد مخططات الكهروميكانيك والديكور، توريد المواد الأساسية.</div><div class="timeline-step"><span class="font-bold text-orange-700">الأسبوع 3-5:</span> أعمال البنية التحتية للكهرباء والتكييف (مجاري هواء، مواسير، كابلات).</div><div class="timeline-step"><span class="font-bold text-orange-700">الأسبوع 6-8:</span> تنفيذ الديكورات (أسقف جبس، دهانات، أرضيات) وتزامنها مع شبكات التيار الخفيف.</div><div class="timeline-step"><span class="font-bold text-orange-700">الأسبوع 9-10:</span> تركيب أجهزة اسمارت هوم، اختبار أنظمة التكييف والكهرباء.</div><div class="timeline-step"><span class="font-bold text-orange-700">الأسبوع 11-12:</span> التشغيل التجريبي، ضبط الإعدادات، والتسليم النهائي.</div></div></div><div class="bg-gradient-to-br from-orange-50 to-white rounded-2xl p-6 shadow-lg"><h3 class="text-2xl font-bold border-r-4 border-orange-500 pr-3 mb-5"><i class="fas fa-users ml-2 text-orange-600"></i> توزيع فرق العمل</h3><ul class="space-y-4 text-right"><li class="flex items-start gap-3"><span class="bg-orange-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mt-0.5">1</span><div><span class="font-bold">فريق الكهروميكانيك (12 فني):</span> كهرباء، تكييف، سباكة، حريق.</div></li><li class="flex items-start gap-3"><span class="bg-orange-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mt-0.5">2</span><div><span class="font-bold">فريق الديكور والتشطيبات (8 فني):</span> جبس، دهانات، أرضيات، وتركيبات خشبية.</div></li><li class="flex items-start gap-3"><span class="bg-orange-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mt-0.5">3</span><div><span class="font-bold">فريق اسمارت هوم والتحكم (4 مهندسين):</span> برمجة، شبكات، أنظمة أتمتة.</div></li><li class="flex items-start gap-3"><span class="bg-orange-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mt-0.5">4</span><div><span class="font-bold">فريق إدارة المشروع:</span> تنسيق، جودة، سلامة، وجدولة.</div></li></ul><div class="mt-6 p-4 bg-orange-100 rounded-xl text-center"><i class="fas fa-hard-hat text-orange-700 text-2xl ml-2"></i><span class="font-semibold">بدء تنفيذ تجهيزات الفرع اعتباراً من الأسبوع القادم – جاهزية عالية لإنجاز المشروع في وقت قياسي.</span></div></div></div></div></section>
+    <section id="branch-plan" class="py-20 px-5 md:px-10 bg-white fade-up"><div class="container mx-auto max-w-6xl"><div class="text-center mb-12"><span class="text-[#1d699b] font-bold uppercase">الخطة التنفيذية</span><h2 class="text-4xl font-bold text-slate-800">خطة تشغيل الفرع الكبير – تجهيزات متكاملة</h2><div class="w-24 h-1 bg-[#1d699b] mx-auto mt-4 rounded-full"></div><p class="text-gray-600 max-w-2xl mx-auto mt-4">نعلن البدء في تجهيزات الفرع الجديد اعتباراً من <strong class="text-[#1d699b]">الأسبوع القادم</strong> وفق خطة زمنية محكمة وتوزيع دقيق للفرق.</p></div><div class="grid lg:grid-cols-2 gap-10"><div class="bg-slate-50 rounded-2xl p-6 shadow-lg"><h3 class="text-2xl font-bold border-r-4 border-[#1d699b] pr-3 mb-5"><i class="fas fa-calendar-week ml-2 text-[#1d699b]"></i> الجدول الزمني (12 أسبوعاً)</h3><div class="space-y-4"><div class="timeline-step"><span class="font-bold text-[#1d699b]">الأسبوع 1-2:</span> إنهاء التصاميم الهندسية واعتماد مخططات الكهروميكانيك والديكور، توريد المواد الأساسية.</div><div class="timeline-step"><span class="font-bold text-[#1d699b]">الأسبوع 3-5:</span> أعمبنية التحتية للكهرباء والتكييف (مجاري هواء، مواسير، كابلات).</div><div class="timeline-step"><span class="font-bold text-[#1d699b]">الأسبوع 6-8:</span> تنفيذ الديكورات (أسقف جبس، دهانات، أرضيات) وتزامنها مع شبكات التيار الخفيف.</div><div class="timeline-step"><span class="font-bold text-[#1d699b]">الأسبوع 9-10:</span> تركيب أجهزة اسمارت هوم، اختبار أنظمة التكييف والكهرباء.</div><div class="timeline-step"><span class="font-bold text-[#1d699b]">الأسبوع 11-12:</span> التشغيل التجريبي، ضبط الإعدادات، والتسليم النهائي.</div></div></div><div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-6 shadow-lg"><h3 class="text-2xl font-bold border-r-4 border-[#1d699b] pr-3 mb-5"><i class="fas fa-users ml-2 text-[#1d699b]"></i> توزيع فرق العمل</h3><ul class="space-y-4 text-right"><li class="flex items-start gap-3"><span class="bg-[#1d699b] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mt-0.5">1</span><div><span class="font-bold">فريق الكهروميكانيك (12 فني):</span> كهرباء، تكييف، سباكة، حريق.</div></li><li class="flex items-start gap-3"><span class="bg-[#1d699b] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mt-0.5">2</span><div><span class="font-bold">فريق الديكور والتشطيبات (8 فني):</span> جبس، دهانات، أرضيات، وتركيبات خشبية.</div></li><li class="flex items-start gap-3"><span class="bg-[#1d699b] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mt-0.5">3</span><div><span class="font-bold">فريق اسمارت هوم والتحكم (4 مهندسين):</span> برمجة، شبكات، أنظمة أتمتة.</div></li><li class="flex items-start gap-3"><span class="bg-[#1d699b] text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mt-0.5">4</span><div><span class="font-bold">فريق إدارة المشروع:</span> تنسيق، جودة، سلامة، وجدولة.</div></li></ul><div class="mt-6 p-4 bg-blue-100 rounded-xl text-center"><i class="fas fa-hard-hat text-[#1d699b] text-2xl ml-2"></i><span class="font-semibold">بدء تنفيذ تجهيزات الفرع اعتباراً من الأسبوع القادم – جاهزية عالية لإنجاز المشروع في وقت قياسي.</span></div></div></div></div></section>
 
-    <section id="stats" class="py-20 bg-orange-50 bg-pattern fade-up"><div class="container mx-auto px-5 text-center"><h2 class="text-3xl md:text-4xl font-bold text-slate-800">إنجازاتنا بالأرقام</h2><div class="w-20 h-1 bg-orange-500 mx-auto my-4 rounded-full"></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mt-10"><div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-orange-100 rounded-full flex mx-auto items-center justify-center text-orange-600 text-3xl"><i class="fas fa-calendar-alt"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">5+</div><p class="text-xl text-orange-600 font-bold mt-1">عاماً من التميز</p></div><div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-orange-100 rounded-full flex mx-auto items-center justify-center text-orange-600 text-3xl"><i class="fas fa-hard-hat"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">150+</div><p class="text-xl text-orange-600 font-bold mt-1">مشروع مكتمل</p></div><div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-orange-100 rounded-full flex mx-auto items-center justify-center text-orange-600 text-3xl"><i class="fas fa-user-tie"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">25+</div><p class="text-xl text-orange-600 font-bold mt-1">مهندس خبير</p></div><div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-orange-100 rounded-full flex mx-auto items-center justify-center text-orange-600 text-3xl"><i class="fas fa-smile"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">98%</div><p class="text-xl text-orange-600 font-bold mt-1">رضا العملاء</p></div></div></div></section>
+    <section id="stats" class="py-20 bg-blue-50 bg-pattern fade-up"><div class="container mx-auto px-5 text-center"><h2 class="text-3xl md:text-4xl font-bold text-slate-800">إنجازاتنا بالأرقام</h2><div class="w-20 h-1 bg-[#1d699b] mx-auto my-4 rounded-full"></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto mt-10"><div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-blue-100 rounded-full flex mx-auto items-center justify-center text-[#1d699b] text-3xl"><i class="fas fa-calendar-alt"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">5+</div><p class="text-xl text-[#1d699b] font-bold mt-1">عاماً من التميز</p></div><div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-blue-100 rounded-full flex mx-auto items-center justify-center text-[#1d699b] text-3xl"><i class="fas fa-hard-hat"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">150+</div><p class="text-xl text-[#1d699b] font-bold mt-1">مشروع مكتمل</p></div><div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-blue-100 rounded-full flex mx-auto items-center justify-center text-[#1d699b] text-3xl"><i class="fas fa-user-tie"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">25+</div><p class="text-xl text-[#1d699b] font-bold mt-1">مهندس خبير</p></div><div class="stats-card bg-white p-7 rounded-2xl shadow-lg text-center"><div class="w-20 h-20 bg-blue-100 rounded-full flex mx-auto items-center justify-center text-[#1d699b] text-3xl"><i class="fas fa-smile"></i></div><div class="text-5xl font-extrabold text-slate-800 mt-4">98%</div><p class="text-xl text-[#1d699b] font-bold mt-1">رضا العملاء</p></div></div></div></section>
 
-    <section id="services" class="py-20 px-5 bg-white fade-up"><div class="container mx-auto text-center mb-14"><span class="text-orange-600 font-bold uppercase">مجالات خبرتنا</span><h2 class="text-4xl md:text-5xl font-bold mt-2 text-slate-800">خدماتنا الهندسية المتكاملة</h2><div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div></div><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-wind text-4xl text-orange-600 mb-3"></i><h3 class="text-xl font-bold">أنظمة التكييف</h3><p>تصميم وتنفيذ أنظمة HVAC للمشاريع الكبرى.</p></div><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-bolt text-4xl text-orange-600 mb-3"></i><h3 class="text-xl font-bold">الكهرباء والقوى</h3><p>شبكات الجهد المنخفض والمتوسط، لوحات توزيع.</p></div><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-home text-4xl text-orange-600 mb-3"></i><h3 class="text-xl font-bold">اسمارت هوم</h3><p>أنظمة تحكم ذكية، إضاءة LED، ستائر أوتوماتيكية.</p></div><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-paint-roller text-4xl text-orange-600 mb-3"></i><h3 class="text-xl font-bold">الديكور والتشطيبات</h3><p>أسقف، جبس، دهانات، وأرضيات فاخرة.</p></div><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-drafting-compass text-4xl text-orange-600 mb-3"></i><h3 class="text-xl font-bold">استشارات ودراسات</h3><p>تصميم أنظمة الكهروميكانيك وتخطيط المسارات.</p></div><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-tools text-4xl text-orange-600 mb-3"></i><h3 class="text-xl font-bold">صيانة دورية</h3><p>خدمات ما بعد البناء وضمان جودة التشغيل.</p></div></div></section>
+    <section id="services" class="py-20 px-5 bg-white fade-up"><div class="container mx-auto text-center mb-14"><span class="text-[#1d699b] font-bold uppercase">مجالات خبرتنا</span><h2 class="text-4xl md:text-5xl font-bold mt-2 text-slate-800">خدماتنا الهندسية المتكاملة</h2><div class="w-24 h-1 bg-[#1d699b] mx-auto mt-4 rounded-full"></div></div><div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto"><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-wind text-4xl text-[#1d699b] mb-3"></i><h3 class="text-xl font-bold">أنظمة التكييف</h3><p>تصميم وتنفيذ أنظمة HVAC للمشاريع الكبرى.</p></div><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-bolt text-4xl text-[#1d699b] mb-3"></i><h3 class="text-xl font-bold">الكهرباء والقوى</h3><p>شبكات الجهد المنخفض والمتوسط، لوحات توزيع.</p></div><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-home text-4xl text-[#1d699b] mb-3"></i><h3 class="text-xl font-bold">اسمارت هوم</h3><p>أنظمة تحكم ذكية، إضاءة LED، ستائر أوتوماتيكية.</p></div><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-paint-roller text-4xl text-[#1d699b] mb-3"></i><h3 class="text-xl font-bold">الديكور والتشطيبات</h3><p>أسقف، جبس، دهانات، وأرضيات فاخرة.</p></div><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-drafting-compass text-4xl text-[#1d699b] mb-3"></i><h3 class="text-xl font-bold">استشارات ودراسات</h3><p>تصميم أنظمة الكهروميكانيك وتخطيط المسارات.</p></div><div class="bg-gray-50 p-6 rounded-2xl shadow-md service-card"><i class="fas fa-tools text-4xl text-[#1d699b] mb-3"></i><h3 class="text-xl font-bold">صيانة دورية</h3><p>خدمات ما بعد البناء وضمان جودة التشغيل.</p></div></div></section>
 
     <!-- PARTNERS -->
-    <section id="partners" class="py-20 px-5 md:px-10 bg-gradient-to-br from-white to-orange-50/30 fade-up"><div class="container mx-auto text-center mb-12"><span class="text-orange-600 font-bold uppercase tracking-wider">ثقة وشراكة</span><h2 class="text-4xl md:text-5xl font-bold mt-2 text-slate-800">شركاء النجاح</h2><div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div><p class="text-gray-600 max-w-2xl mx-auto mt-4">نعتز بشراكاتنا الاستراتيجية مع أبرز المؤسسات والشركات الرائدة</p></div><div class="max-w-7xl mx-auto"><div class="swiper partner-swiper"><div class="swiper-wrapper" id="partnersWrapper"></div><div class="swiper-pagination"></div></div></div></section>
+    <section id="partners" class="py-20 px-5 md:px-10 bg-gradient-to-br from-white to-blue-50/30 fade-up"><div class="container mx-auto text-center mb-12"><span class="text-[#1d699b] font-bold uppercase tracking-wider">ثقة وشراكة</span><h2 class="text-4xl md:text-5xl font-bold mt-2 text-slate-800">شركاء النجاح</h2><div class="w-24 h-1 bg-[#1d699b] mx-auto mt-4 rounded-full"></div><p class="text-gray-600 max-w-2xl mx-auto mt-4">نعتز بشراكاتنا الاستراتيجية مع أبرز المؤسسات والشركات الرائدة</p></div><div class="max-w-7xl mx-auto"><div class="swiper partner-swiper"><div class="swiper-wrapper" id="partnersWrapper"></div><div class="swiper-pagination"></div></div></div></section>
 
-    <section id="team" class="py-20 px-5 md:px-10 bg-slate-50 fade-up">
-        <div class="container mx-auto text-center mb-12">
-            <span class="text-orange-600 font-bold uppercase tracking-wider">فريق الخبراء</span>
-            <h2 class="text-4xl md:text-5xl font-bold mt-2 text-slate-800">فريق دقة الإنجاز الذكي (DIDCO)</h2>
-            <div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div>
-            <p class="text-gray-600 max-w-2xl mx-auto mt-4">نفخر بفريقنا المكون من نخبة من القيادات والمهندسين ذوي الخبرات العالية</p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/fawaz.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Fawaz Al-Harbi</h3><p class="text-orange-600 font-semibold text-sm">Chairman of the Board</p></div>
-            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/fayez.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Fayez Al-Harbi</h3><p class="text-orange-600 font-semibold text-sm">Chief Executive Officer (CEO)</p></div>
-            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/amonem.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">A.Monem Khalil</h3><p class="text-orange-600 font-semibold text-sm">Operations Director</p></div>
-            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/sherif.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Sherif Abou Senna</h3><p class="text-orange-600 font-semibold text-sm">Marketing Manager</p></div>
-            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/ibrahim.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Ibrahim Shu'aib</h3><p class="text-orange-600 font-semibold text-sm">Public Relations Manager</p></div>
-            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/abdela-aziz.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Abel Aziz Nasser</h3><p class="text-orange-600 font-semibold text-sm">Technical Office Manager</p></div>
-            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/alaa.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Alaa Talba</h3><p class="text-orange-600 font-semibold text-sm">Contracts & Tenders Manager</p></div>
-            <div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-orange-100 to-orange-200 flex items-center justify-center border-4 border-orange-300"><img src="./images/omar.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Omar Al-Khadrawi</h3><p class="text-orange-600 font-semibold text-sm">Customer Relations Officer</p></div>
-        </div>
-    </section>
-    <section id="certificates" class="py-20 px-5 bg-white fade-up"><div class="container mx-auto text-center mb-12"><span class="text-orange-600 font-bold uppercase">الاعتماد والجودة</span><h2 class="text-4xl font-bold text-slate-800 mt-2">شهادات رسمية وثقة مطلقة</h2><div class="w-24 h-1 bg-orange-500 mx-auto mt-4 rounded-full"></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto"><div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/ValueAdded Certificate.jpg" data-title="شهادة القيمة المضافة"><img src="./images/ValueAdded Certificate.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">القيمة المضافة</p></div><div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/Zakat-and-Income- Registration- Certificate.jpg" data-title="شهادة الزكاة والدخل"><img src="./images/Zakat-and-Income- Registration- Certificate.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">الزكاة والدخل</p></div><div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/seal.jpeg" data-title="شهادة الاعتماد"><img src="./images/tryka.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">شهاة الاعتماد</p></div><div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/national-address.jpg" data-title="العنوان الوطني"><img src="./images/national-address.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">العنوان الوطني</p></div></div></section>
-    <div id="certModal" class="modal-overlay"><div class="modal-content"><button id="closeModal" class="absolute top-2 left-2 bg-gray-200 rounded-full w-8 h-8"><i class="fas fa-times"></i></button><img id="modalImage" class="modal-image mx-auto"><h3 id="modalTitle" class="text-center font-bold text-xl mt-4"></h3><div class="flex justify-center gap-4 mt-4"><a id="downloadBtn" href="#" download class="bg-orange-600 text-white px-6 py-2 rounded-full">تحميل</a></div></div></div>
+    <section id="team" class="py-20 px-5 md:px-10 bg-slate-50 fade-up"><div class="container mx-auto text-center mb-12"><span class="text-[#1d699b] font-bold uppercase tracking-wider">فريق الخبراء</span><h2 class="text-4xl md:text-5xl font-bold mt-2 text-slate-800">فريق دقة الإنجاز الذكي (DIDCO)</h2><div class="w-24 h-1 bg-[#1d699b] mx-auto mt-4 rounded-full"></div><p class="text-gray-600 max-w-2xl mx-auto mt-4">نفخر بفريقنا المكون من نخبة من القيادات والمهندسين ذوي الخبرات العالية</p></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto"><div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border-4 border-blue-300"><img src="./images/fawaz.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Fawaz Al-Harbi</h3><p class="text-[#1d699b] font-semibold text-sm">Chairman of the Board</p></div><div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border-4 border-blue-300"><img src="./images/fayez.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Fayez Al-Harbi</h3><p class="text-[#1d699b] font-semibold text-sm">Chief Executive Officer (CEO)</p></div><div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border-4 border-blue-300"><img src="./images/amonem.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">A.Monem Khalil</h3><p class="text-[#1d699b] font-semibold text-sm">Operations Director</p></div><div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border-4 border-blue-300"><img src="./images/sherif.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Sherif Abou Senna</h3><p class="text-[#1d699b] font-semibold text-sm">Marketing Manager</p></div><div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border-4 border-blue-300"><img src="./images/ibrahim.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Ibrahim Shu'aib</h3><p class="text-[#1d699b] font-semibold text-sm">Public Relations Manager</p></div><div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border-4 border-blue-300"><img src="./images/abdela-aziz.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Abel Aziz Nasser</h3><p class="text-[#1d699b] font-semibold text-sm">Technical Office Manager</p></div><div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border-4 border-blue-300"><img src="./images/alaa.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Alaa Talba</h3><p class="text-[#1d699b] font-semibold text-sm">Contracts & Tenders Manager</p></div><div class="team-card bg-white p-5 rounded-2xl shadow-lg text-center"><div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border-4 border-blue-300"><img src="./images/omar.jpeg" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/200x200'"></div><h3 class="text-xl font-bold">Omar Al-Khadrawi</h3><p class="text-[#1d699b] font-semibold text-sm">Customer Relations Officer</p></div></div></section>
+    
+    <section id="certificates" class="py-20 px-5 bg-white fade-up"><div class="container mx-auto text-center mb-12"><span class="text-[#1d699b] font-bold uppercase">الاعتماد والجودة</span><h2 class="text-4xl font-bold text-slate-800 mt-2">شهادات رسمية وثقة مطلقة</h2><div class="w-24 h-1 bg-[#1d699b] mx-auto mt-4 rounded-full"></div></div><div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto"><div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/ValueAdded Certificate.jpg" data-title="شهادة القيمة المضافة"><img src="./images/ValueAdded Certificate.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">القيمة المضافة</p></div><div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/Zakat-and-Income- Registration- Certificate.jpg" data-title="شهادة الزكاة والدخل"><img src="./images/Zakat-and-Income- Registration- Certificate.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">الزكاة والدخل</p></div><div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/seal.jpeg" data-title="شهادة الاعتماد"><img src="./images/tryka.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">شهاة الاعتماد</p></div><div class="cert-card bg-gray-50 rounded-2xl p-6 text-center" data-img="./images/national-address.jpg" data-title="العنوان الوطني"><img src="./images/national-address.jpg" class="h-20 mx-auto object-contain"><p class="font-bold mt-3">العنوان الوطني</p></div></div></section>
+    <div id="certModal" class="modal-overlay"><div class="modal-content"><button id="closeModal" class="absolute top-2 left-2 bg-gray-200 rounded-full w-8 h-8"><i class="fas fa-times"></i></button><img id="modalImage" class="modal-image mx-auto"><h3 id="modalTitle" class="text-center font-bold text-xl mt-4"></h3><div class="flex justify-center gap-4 mt-4"><a id="downloadBtn" href="#" download class="bg-[#1d699b] text-white px-6 py-2 rounded-full">تحميل</a></div></div></div>
 
-    <section id="contact" class="py-16 px-5 bg-slate-900 text-white fade-up"><div class="container mx-auto grid md:grid-cols-2 gap-12"><div><h3 class="text-3xl font-bold mb-6">تواصل مع <span class="text-orange-400">دقة الإنجاز الذكي (DIDCO)</span></h3><div class="flex flex-col gap-5"><div class="flex items-center gap-4"><i class="fas fa-map-marker-alt text-orange-400 text-2xl"></i><div><p>المدينة المنورة - حي القصواء - مخطط الأمير نايف</p><p>مجموعة أوقاف العفيفي مكتب رقم 4</p></div></div><div class="flex items-center gap-4"><i class="fas fa-phone-alt text-orange-400 text-2xl"></i><div><a href="tel:+966148406618" class="hover:text-orange-300">+966 14 840 6618</a></div></div><div class="flex items-center gap-4"><i class="fab fa-whatsapp text-orange-400 text-2xl"></i><div><a href="https://wa.me/966532750319" target="_blank">+966 53 275 0319</a></div></div></div></div><form class="bg-white/10 p-6 rounded-2xl"><input type="text" placeholder="الاسم الكامل" class="w-full p-3 rounded-lg bg-white/20 mb-4"><input type="email" placeholder="البريد الإلكتروني" class="w-full p-3 rounded-lg bg-white/20 mb-4"><textarea rows="4" placeholder="نوع المشروع أو الاستفسار" class="w-full p-3 rounded-lg bg-white/20 mb-4"></textarea><button class="bg-orange-600 w-full py-3 rounded-full font-bold">إرسال الطلب</button></form></div></section>
-    <footer class="bg-slate-950 py-6 text-center text-gray-400 text-sm">© 2025 شركة دقة الإنجاز الذكي (DIDCO) للكهروميكانيك والإنشاءات الذكية - جميع الحقوق محفوظة</footer>
+    <section id="contact" class="py-16 px-5 bg-slate-900 text-white fade-up"><div class="container mx-auto grid md:grid-cols-2 gap-12"><div><h3 class="text-3xl font-bold mb-6">تواصل مع <span class="text-[#8fc9ff]">دقة الإنجاز الذكي (DIDCO)</span></h3><div class="flex flex-col gap-5"><div class="flex items-center gap-4"><i class="fas fa-map-marker-alt text-[#8fc9ff] text-2xl"></i><div><p>المدينة المنورة - حي القصواء - مخطط الأمير نايف</p><p>مجموعة أوقاف العفيفي مكتب رقم 4</p></div></div><div class="flex items-center gap-4"><i class="fas fa-phone-alt text-[#8fc9ff] text-2xl"></i><div><a href="tel:+966148406618" class="hover:text-blue-300">+966 14 840 6618</a></div></div><div class="flex items-center gap-4"><i class="fab fa-whatsapp text-[#8fc9ff] text-2xl"></i><div><a href="https://wa.me/966532750319" target="_blank">+966 53 275 0319</a></div></div></div></div><form class="bg-white/10 p-6 rounded-2xl"><input type="text" placeholder="الاسم الكامل" class="w-full p-3 rounded-lg bg-white/20 mb-4"><input type="email" placeholder="البريد الإلكتروني" class="w-full p-3 rounded-lg bg-white/20 mb-4"><textarea rows="4" placeholder="نوع المشروع أو الاستفسار" class="w-full p-3 rounded-lg bg-white/20 mb-4"></textarea><button class="bg-[#1d699b] w-full py-3 rounded-full font-bold hover:bg-[#494b4a] transition">إرسطلب</button></form></div></section>
+    <footer class="bg-slate-950 py-6 text-center text-gray-400 text-sm">© 2025 شركة دقة الإنجاز الذكي (DIDCO) للكهروميكانيك ال  والإنشاءات الذكية - جميع الحقوق محفوظة</footer>
 
     <!-- FLOATING ICONS + CHATBOT -->
     <div class="floating-icons"><a href="https://wa.me/966532750319" target="_blank" class="float-icon whatsapp-float"><i class="fab fa-whatsapp text-2xl"></i></a><a href="tel:+966148406618" class="float-icon call-float"><i class="fas fa-phone-alt text-2xl"></i></a></div>
-    <div class="chatbot-container" style="position: fixed; bottom: 25px; left: 25px; z-index: 1000;"><div id="chatToggle" class="chat-toggle" style="width: 55px; height: 55px; background: #f97316; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fas fa-comment-dots text-white text-2xl"></i></div><div id="chatWindow" class="chat-window hidden" style="position: absolute; bottom: 70px; left: 0; width: 340px; background: white; border-radius: 24px;"><div class="chat-header bg-slate-800 text-white p-3 flex justify-between"><span><i class="fas fa-robot ml-2"></i> مساعد DIDCO</span><i id="closeChat" class="fas fa-times cursor-pointer"></i></div><div class="chat-messages h-80 overflow-y-auto p-3 bg-gray-50" id="chatMessages"><div class="bot-msg bg-gray-200 p-2 rounded-2xl">مرحباً! اسأل عن الكهروميكانيك، خطة الفرع، أو اسمارت هوم.</div></div><div class="quick-btns flex flex-wrap gap-2 p-2"><span class="quick-btn bg-orange-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="تفاصيل خطة تشغيل الفرع">خطة الفرع</span><span class="quick-btn bg-orange-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="خدمات اسمارت هوم">اسمارت هوم</span><span class="quick-btn bg-orange-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="أرقام التواصل">التواصل</span></div><div class="chat-input-area flex p-2 gap-2"><input id="chatInput" class="flex-1 border rounded-full p-2" placeholder="اسأل..."><button id="sendChat" class="bg-orange-600 text-white rounded-full w-10 h-10"><i class="fas fa-paper-plane"></i></button></div></div></div>
+    <div class="chatbot-container" style="position: fixed; bottom: 25px; left: 25px; z-index: 1000;"><div id="chatToggle" class="chat-toggle" style="width: 55px; height: 55px; background: #1d699b; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fas fa-comment-dots text-white text-2xl"></i></div><div id="chatWindow" class="chat-window hidden" style="position: absolute; bottom: 70px; left: 0; width: 340px; background: white; border-radius: 24px;"><div class="chat-header bg-slate-800 text-white p-3 flex justify-between"><span><i class="fas fa-robot ml-2"></i> مساعد DIDCO</span><i id="closeChat" class="fas fa-times cursor-pointer"></i></div><div class="chat-messages h-80 overflow-y-auto p-3 bg-gray-50" id="chatMessages"><div class="bot-msg bg-gray-200 p-2 rounded-2xl">مرحباً! اسأل عن الكهروميكانيك، خطة الفرع، أو اسمارت هوم.</div></div><div class="quick-btns flex flex-wrap gap-2 p-2"><span class="quick-btn bg-blue-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="تفاصيل خطة تشغيل الفرع">خطة الفرع</span><span class="quick-btn bg-blue-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="خدمات اسمارت هوم">اسمارت هوم</span><span class="quick-btn bg-blue-50 px-3 py-1 rounded-full text-sm cursor-pointer" data-question="أرقام التواصل">التواصل</span></div><div class="chat-input-area flex p-2 gap-2"><input id="chatInput" class="flex-1 border rounded-full p-2" placeholder="اسأل..."><button id="sendChat" class="bg-[#1d699b] text-white rounded-full w-10 h-10"><i class="fas fa-paper-plane"></i></button></div></div></div>
 
     <script>
         // Define gallery arrays for each project (including Project 5)
@@ -603,7 +557,6 @@
         for(let i=1;i<=11;i++) projectImages.project2.images.push(`./images/project-2-img-${i}.jfif`);
         for(let i=1;i<=7;i++) projectImages.project3.images.push(`./images/project-3-img-${i}.jfif`);
         projectImages.project3.videos = ['./video/project-3-video-1.mp4', './video/project-3-video-2.mp4'];
-        // Project 5: 15 images as requested
         for(let i=1;i<=15;i++) projectImages.project5.images.push(`./images/project-5-img-${i}.jfif`);
 
         let currentGalleryItems = [];
@@ -718,7 +671,6 @@
                 }
             }
         }
-        // NEW: loadProject5Gallery (15 images)
         function loadProject5Gallery() {
             const container = document.getElementById('gallery-5');
             if(!container) return;
@@ -747,7 +699,6 @@
             new Swiper('.partner-swiper', { slidesPerView: 2, spaceBetween: 20, loop: true, autoplay: { delay: 2500, disableOnInteraction: false }, pagination: { el: '.swiper-pagination', clickable: true }, navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }, breakpoints: { 640: { slidesPerView: 3 }, 768: { slidesPerView: 4 }, 1024: { slidesPerView: 5 } } });
         }
 
-        // Slider, menus, chatbot, GSAP same as original
         const slides = document.querySelectorAll('.slide'); let currentSlide = 0;
         function showSlide(index) { if(index<0) index=slides.length-1; if(index>=slides.length) index=0; slides.forEach((s,i)=> s.style.opacity = i===index ? '1':'0'); dots.forEach((d,i)=> i===index ? d.classList.add('bg-white','scale-125') : d.classList.remove('bg-white','scale-125')); currentSlide=index; }
         let slideInterval = setInterval(()=>{ showSlide((currentSlide+1)%slides.length); },5500);
@@ -764,7 +715,7 @@
         document.getElementById('closeModal').onclick=()=>modal.classList.remove('active');
         modal.onclick=e=>{ if(e.target===modal) modal.classList.remove('active'); };
         const chatMessages=document.getElementById('chatMessages'), chatInput=document.getElementById('chatInput'), sendChat=document.getElementById('sendChat'), toggleChat=document.getElementById('chatToggle'), chatWindow=document.getElementById('chatWindow'), closeChat=document.getElementById('closeChat');
-        function addMsg(text,isUser){ const div=document.createElement('div'); div.className=isUser?'user-msg bg-orange-500 text-white p-2 rounded-2xl self-end':'bot-msg bg-gray-200 p-2 rounded-2xl self-start'; div.innerText=text; chatMessages.appendChild(div); chatMessages.scrollTop=chatMessages.scrollHeight; }
+        function addMsg(text,isUser){ const div=document.createElement('div'); div.className=isUser?'user-msg bg-[#1d699b] text-white p-2 rounded-2xl self-end':'bot-msg bg-gray-200 p-2 rounded-2xl self-start'; div.innerText=text; chatMessages.appendChild(div); chatMessages.scrollTop=chatMessages.scrollHeight; }
         function botReply(q){ if(q.includes('خطة الفرع')) return "خطة تشغيل الفرع الكبير: جدول زمني 12 أسبوعاً، فرق عمل."; if(q.includes('سمارت هوم')) return "نوفر أنظمة سمارت هوم شاملة: تحكم بالإضاءة، التكييف."; if(q.includes('تواصل')) return "هاتف: +966148406618، واتساب: +966532750319."; return "مرحباً! اسأل عن خدماتنا."; }
         sendChat.onclick=()=>{ if(chatInput.value.trim()){ addMsg(chatInput.value,true); setTimeout(()=>{ addMsg(botReply(chatInput.value.toLowerCase()),false); },300); chatInput.value=''; } };
         chatInput.onkeypress=e=>{ if(e.key==='Enter') sendChat.click(); };
@@ -776,7 +727,7 @@
         gsap.utils.toArray('.team-card, .stats-card, .service-card, .project-card').forEach((card,i)=> { gsap.fromTo(card,{scale:0.95,opacity:0},{scale:1,opacity:1,duration:0.5,delay:i*0.05,scrollTrigger:{trigger:card.closest('section'),start:'top 85%'}}); });
         const navLinks = document.querySelectorAll('.nav-link'); const sections = document.querySelectorAll('section[id]');
         window.addEventListener('scroll', () => { let current = ''; sections.forEach(section => { if (window.scrollY >= (section.offsetTop - 150)) current = section.getAttribute('id'); }); navLinks.forEach(link => { link.classList.remove('active'); if (link.getAttribute('href').includes(current)) link.classList.add('active'); }); });
-        loadProject1Gallery(); loadProject2Gallery(); loadProject3Gallery(); loadProject5Gallery(); // Load new project 5
+        loadProject1Gallery(); loadProject2Gallery(); loadProject3Gallery(); loadProject5Gallery();
         initPartnersSwiper();
     </script>
 </body>
